@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #0099ff; /* Navbar background color */
+    color: #ffffff; /* Navbar text color */
+    padding: 15px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #003366; /* Darker sidebar color */
+    position: fixed; /* Fixed sidebar */
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+
+.sidebar-content {
+    padding: 10px 0;
+}
+
+.sidebar-content .lists {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-content .list {
+    margin: 10px 0;
+}
+
+.sidebar-content .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar-content .nav-link:hover {
+    background-color: #005999; /* Color on hover */
+}
+
+/* Main Content */
+main {
+    margin-left: 250px; /* Leave space for the sidebar */
+    padding: 20px;
+}
+
+.heading {
+    margin: 20px 0;
+}
+
+.head-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+}
+
+.head-mean {
+    font-size: 18px;
+    color: #666; /* Grey text for secondary information */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background for cards */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #0099ff; /* Button background */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #007acc; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide navbar on small screens */
+    }
+
+    main {
+        margin-left: 0; /* Full width on small screens */
+    }
+}
